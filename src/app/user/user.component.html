@@ -1,0 +1,44 @@
+
+<app-dashboard></app-dashboard>
+
+
+
+<div>
+  <input type="text" placeholder="Search">
+
+  <table>
+    <thead>
+      <tr>
+        <th>User Name</th>
+       <!-- <th>Name</th> -->
+        <th>EmailAddress</th>
+        <th>Mobile NO</th>
+       <!-- <th>Phone-no</th>  -->
+       
+       </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of user">
+        <td>{{ user.firstName}}</td>
+        <!-- <td>{{user.lastname }}</td> -->
+        <td> {{ user.emailaddress }}</td>
+        <td> {{ user.age }}</td>
+        <!-- <td>{{ user.Phno }}</td> -->
+        
+        
+      </tr>
+    </tbody>
+    <br>
+    <div >
+    <button style="background-color: yellow;">Add Bulk</button>
+    <button style="background-color: blue;">Add New</button>
+    <button style="background-color: green;">Update</button>
+    <button style="background-color: red;">Delete</button>
+    </div>
+    
+  </table>
+ 
+</div>
+
+
+
